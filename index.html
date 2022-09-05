@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duks Lake</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body oncopy="return false">
+
+    <div class="bg">
+        <div id="bg" class="bg__logo">
+            <img class="logo_white" src="img/logo_white.png" oncontextmenu="return false;" alt="logo">
+        </div>
+        <video class="video__bg" src="img/bg_video.mp4" loop autoplay muted></video>
+        <btn id="btn" type="submit" class="ducks-btn">
+            <span class="arrow-lefr"><img src="img/arrow-lefr.svg" alt=""></span>
+            <span class="arrow-right"><img src="img/arrow-right.svg" alt=""></span>
+        </btn>
+    </div>
+    <div id="duck" class="popup">
+        <div class="poup-body">
+            <div class="poup-body__logo">
+                <div class="poup-body__image-left">
+                    <div class="poup-body__image" style="background-image:url(img/duck1.png) ;"></div>
+                </div>
+                <div class="poup-body__image-right">
+                    <div class="poup-body__image" style="background-image:url(img/duck1.png) ;"></div> 
+                </div>
+                
+            </div>
+            <div class="poup-content">
+                <h3 class="poup__title">Зворотній зв’зок</h3>
+                <p class="poup__subtitle">Заповніть форму і наш менеджер зв’яжеться з Вами !</p>
+                <form class="poup-form" action="files/sendmail/sendmail.php" method="POST">
+
+                    <div class="popup-form__item">
+                        <input id="name" class="input " type="text" name="name" required>
+                        <span >
+                            Ваше ім’я
+                        </span>
+                    </div>
+                    <div class="popup-form__item">
+                        <input id="phone" class="input input__tel" type="tel" name="phone" required >
+                        <span>
+                            Ваш телефон
+                        </span>
+                    </div>
+                    <div class="popup-form__item">
+                        <input class="input" type="text" name="form[email]" data-error="Error" required>
+                        <span >
+                            Ваш e-mail
+                        </span>
+                    </div>
+
+                    <div class="popup-form__item">
+                        <input id="formagreement" class="checkbox__input" type="checkbox" name="agreement">
+                        <label for="formagreement" class="checkbox__label">
+                            Я даю згоду на обробку персональних
+                            данних
+                        </label>
+                    </div>
+                    <button type="submit" class="poup__button">Надіслати</button>
+                </form>
+                <div class="poup-body__footer">
+                    <div class="poup-body__footer-content">
+                        <div class="poup-body__footer-contacts">
+                            <p class="poup-body__footer-name">Ми у соц. мережах:</p>
+                            <div class="poup-body__footer-social">
+                               <a href="#" class="popup__links"><img src="img/instagram.svg" alt="instagram" class="poup-body__footer-img"></a>
+                               <a href="#" class="popup__links"><img src="img/facebook.svg" alt="facebook" class="poup-body__footer-img"></a> 
+                            </div>
+                        </div>
+                        <div class="poup-body__footer-item">
+                            <p class="poup-body__footer-name">Наш телефон</p>          
+                                <a href="tel:+3809090909" class="poup-body__footer-phone">+38(090)-90-90-909</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="js/main.js"></script>
+
+
+</html>
